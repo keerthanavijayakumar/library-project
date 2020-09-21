@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+        <style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+      	
+      
+          </head>
+   
+            <body bgcolor="perple" text="green"><center><h1>USER DETAILS</h1></center>
+              <form method='POST' action="{% url 'login2' %}">{% csrf_token %} 
+             
+            <center><br><h1>PLEASE CHECK YOUR USER ID AND PASSWORD</h1></center>
+            <center><H1><input type='Submit' class="button" value="INVALID LOGIN" ></H1></center>
+  </form>
+   </body>
+</html>

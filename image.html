@@ -1,0 +1,38 @@
+<html>
+   <head>
+   	
+   </head> 
+   {% load static %}
+
+   <body bgcolor="purple" text="white">
+   <!-- <img src="{% static '/images/chemistry.jpg' %}" width='100px' height='100px'/> -->
+	<center><h2>LIBRARY</h2></center>
+     <table border='15' align="center" height= 500 width=800 font-size:40px>
+     		<th>BOOK ID</th> <th>BOOK NAME </th> <th>published year </th> <th>Author </th> <th>Price </th><th>ALL Available copies </th> <th>ALL BOOK IMAGE </th> 
+     {% for obj in object_list %}
+      
+     	<tr>
+     		<td>{{ obj.book_id }} </td> 
+     		<td>{{ obj.book_name }}</td>
+        <td>{{ obj.published_year}}</td>
+     		<td>{{ obj.book_auther}}</td>
+        <td>{{ obj.book_price}}</td>
+        <td>{{ obj.available_copies}}</td>
+     		<td > 
+     <img src="{% static obj.book_images.url %}" style="width:300px; height:200px;"/> </td>  
+
+	<!-- <td>  -->
+     <!-- <img src="{% static obj.book_images %}" style="width:300px; height:200px;"/> </td>   -->
+
+     
+     	</tr>
+      
+     {% endfor %}
+     </table>	
+</center>
+
+   </body>
+</html>
+
+
+

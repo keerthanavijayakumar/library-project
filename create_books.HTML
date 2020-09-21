@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body  text="white">
+<center>  <h2>ADD BOOKS DATA</h2>
+  <form method='POST' action={% url 'reg_books' %} >{% csrf_token %}
+     <table border='5'>
+      <th COLSPAN='2' BGCOLOR='BLUE'> ADD NEW Books  </th> 
+      
+      
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>ENTER BOOK NAME </TD><td><input type='text' name='t2'>   </td> </tr>
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter AUTHOR NAME  </TD><td><input type='text' name='t3'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter PRICE  </TD><td><input type='text' name='t4'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter PUBLISHED YEAR  </TD><td><input type='text' name='t5'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>AVAILABLE COPIES  </TD><td><input type='text' name='t6'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>IMAGE  </TD><td><img src="http://127.0.0.1:8000/static/images/PHYSICS_1v9CKif_yGPmaKB_lVkZUO6.jpg"  width="100" height="100">  </td> </tr>
+      
+      
+      <tr><td Colspan='2'><center><input type='Submit' Value='Add'></center></td></tr>
+     </table>
+  </form>
+
+</center>
+
+
+   </body>
+</html>

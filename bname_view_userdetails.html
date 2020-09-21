@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE
+      	
+
+      </title>
+   </head>
+   <body  text="white">
+    
+   	<form method='POST' action="{% url 'view_takenbooks_details/' %}">{% csrf_token %}
+<center>  <h2>USER ISSUED BOOK DETAILS</h2>
+  
+     <table border='5'>
+      <th COLSPAN='2' BGCOLOR='BLUE'>  Books Details </th>
+      
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>ENTER BOOK NAME </TD><td><input type='text' name='t2'>   </td> </tr>
+
+      tr><td Colspan='2'><center><input type='Submit' Value='BOOK DETAILS'></center></td></tr>
+
+
+
+     </table>
+ 
+</form>
+  </body>
+</html>

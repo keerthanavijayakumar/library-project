@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+        <style>
+.button {
+  background-color: BLUE;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a { color: purple; } 
+</style>
+      	   
+          </head>
+   
+            <body bgcolor="pink" text="Blue"><center><h1>USER DETAILS</h1></center>
+              <form method='POST' action="{% url 'logout' %}" />{% csrf_token %}
+
+                
+
+            <center><br><h1><I><a href ="/uid_issue_books/">ALL USER LEND BOOKS DETAILS</I></a></h1></center>
+
+             
+
+                  <center><br><h1><I><a href ="/all_users/">ALL USER PERSONAL DETAILS</I></a></h1></center>
+
+                  <center><br><h1><I><a href ="/alllib_books/">ALL AVILABLE BOOKS  DETAILS</I></a></h1></center>
+
+                  <center><br><h1><I><a href ="/all_dept/">ALL DEPARTMENTS DETAILS</I></a></h1></center>
+
+                  
+
+
+
+
+            <BR><center><H1><input type='Submit' class="button" value="LOG OUT" ></H1></center>
+
+          </form>
+   </body>
+</html>
+

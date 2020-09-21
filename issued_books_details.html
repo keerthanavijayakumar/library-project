@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+      
+        <script type="text/javascript">
+          function call_fun()
+          {
+            var f1=document.getElementById("Book_id"); 
+            alert(f1.value);
+            // document.getElementById('img1').src=f1.value;
+          }
+        </script>
+   </head>
+   
+    <body bgcolor="purple" text="white">
+      <form method='POST' action="{% url 'reg_issuebooks' %}"/>{% csrf_token %}
+    <center><table>
+      <th COLSPAN='2' BGCOLOR='BLUE'> ISSUED BOOKS DETAILS  </th> </center>
+   
+    
+
+     <tr> <td><label for="Book ID">BOOK NAME:</label></td>
+    <td><select name="bookid" id="Book_id" >
+
+     {% for bobj in book_obj %}    
+      
+  
+    <option value="{{bobj.book_id}}">{{bobj.book_name}}</option>
+     
+    {% endfor %}
+  </select>
+  <p>
+
+
+</td></tr>
+<tr><td> <label for="User id">USER NAME:</label></td>
+ <td><select name="userid" id="user_id">
+
+     {% for uobj in user_obj %}    
+      
+  
+    <option value="{{uobj.user_id}}">{{uobj.user_name}}</option>
+
+    {% endfor %}
+  </select>
+</td>
+
+</tr>
+        <tr>
+         <td><font face='Arial' Color='Black'>ISSUED DATE :</td>
+         <td><input type='date' placeholder="yyyy-mm-dd" value="" name='t2'> </td> 
+       </tr>
+        <tr> 
+          <td><font face='Arial' Color='Black'>REMARKS :</td>
+          <td><input type='text' name='t3'></td>
+        </tr> 
+      
+       <tr><td colspan='2'> <center><input type='Submit'  Value='Add'></center></td>
+       </tr>
+     </table>
+   
+<!-- <img id='img1' src='test1.jpg' width='100' height='100'  />       -->
+  
+</center>
+ </form>
+   </body>
+</html>

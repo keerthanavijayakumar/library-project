@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body  text="white">
+<center>  <h2>ADD USESR DATA</h2>
+  <form method='POST' action={% url 'reg_user' %} >{% csrf_token %}
+     <table border='5'>
+      <th COLSPAN='2' BGCOLOR='BLUE'> NEW USER </th> 
+      
+      
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>ENTER NAME </TD><td><input type='text' name='t2'>   </td> </tr>
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter MAILID  </TD><td><input type='text' name='t3'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter ADDRESS  </TD><td><input type='text' name='t4'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter PHONENO  </TD><td><input type='text' name='t5'>   </td> </tr>
+
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter CITY  </TD><td><input type='text' name='t6'>   </td> </tr>
+      
+      
+      <tr><td Colspan='2'><center><input type='Submit' Value='Add'></center></td></tr>
+     </table>
+  </form>
+
+</center>
+
+
+   </body>
+</html>

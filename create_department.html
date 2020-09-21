@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body  text="white">
+<center>  <h2>ADD DEPARTMENT DATA</h2>
+  <form method='POST' action={% url 'reg_dept' %} >{% csrf_token %}
+     <table border='5'>
+      <th COLSPAN='2' BGCOLOR='BLUE'> ADD NEW DEPARTMENTS  </th> 
+      
+      
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>DEPARTMENT NAME </TD><td><input type='text' name='t2'>   </td> </tr>
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>Enter HEAD NAME  </TD><td><input type='text' name='t3'>   </td> </tr>
+
+            
+      
+      <tr><td Colspan='2'><center><input type='Submit' Value='Add'></center></td></tr>
+     </table>
+  </form>
+
+</center>
+
+
+   </body>
+</html>

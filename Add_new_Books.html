@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <title>ADD NEW BOOKS</title>
+   </head>
+   <body bgcolor="purple" text="white">
+	<center><h2>ADD NEW BOOKS</h2></center>
+     <table border='15' align="center" height= 500 width=500 font-size:40px>
+      <form method='POST'> {% csrf_token %}
+     		 
+         {{ form.as_table }}
+
+         <tr> <td colspan='2'> <input type="Submit"  name='Add Books' /></td></tr> 
+
+         </form>
+
+      
+     </table>	
+</center>
+
+   </body>
+</html>

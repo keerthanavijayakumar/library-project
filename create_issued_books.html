@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body  text="white">
+<center>  <h2>ADD DEPARTMENT DATA</h2>
+  <form method='POST'  >{% csrf_token %}
+     <table border='5'>
+      <center><th COLSPAN='2' BGCOLOR='BLUE'> ISSUED BOOKS DETAILS  </th> </center>
+      
+      
+      <tr> 
+        <TD> <font face='Arial' Color='Black'>ISSUED DATE</TD><td><input type='text' name='t2'>   </td>
+        <TD> <font face='Arial' Color='Black'>REMARKS</TD><td><input type='text' name='t3'>   </td>
+      </tr>
+       
+        
+            
+      
+      <tr><td Colspan='2'><center><input type='Submit' Value='Add'></center></td></tr>
+     </table>
+  </form>
+
+</center>
+
+
+   </body>
+</html>

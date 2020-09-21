@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+      <script>
+
+      </script>
+   </head>
+   {% load static %}
+   <body bgcolor="green" text="white">
+  <h2>welcome to lend books</h2>
+
+  
+
+  
+     <table border='15' align="center" height= 500 width=800 font-size:40px>
+
+          <th>Book Id</th> <th>Author</th> <th>Available Copies</th> <th>Book image</th> 
+           <th>Link to click lend</th>
+     
+     {% for obj in bobj %}
+    
+      <tr>
+        
+        <td>{{ obj.book_id  }}</td>
+        <td>{{ obj.book_auther}}</td>
+        <td>{{ obj.available_copies}}</td>
+        <td > 
+     <img src="{% static obj.book_images.url %}" style="width:300px; height:200px;"/> </td>  
+
+        <td><h2><a href ="/lend_books/{{ obj.book_id }}">LEND </a></h2></td>
+     </tr>
+      
+     {% endfor %}
+        
+     
+     </table> 
+</center>
+
+   </body>
+</html>

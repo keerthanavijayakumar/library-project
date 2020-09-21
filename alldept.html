@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <title>WELCOME TO OUR HOME PAGE</title>
+   </head>
+   <body bgcolor="blue" text="white">
+  <h2>Dept DATA</h2>
+     <table border='5'>
+        <th> Id</th> <th>Dept Name </th> <th>Dept Head Name</th>  
+     {% for e1 in object_list %}
+      
+      <tr>
+        <td>{{ e1.dept_id}} </td> 
+        <td>{{ e1.dept_name }}</td>
+        <td>  {{ e1.dept_headname }} </td> 
+        
+
+      </tr>
+      
+     {% endfor %}
+     </table> 
+</center>
+
+   </body>
+</html>
